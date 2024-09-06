@@ -12,6 +12,7 @@
     padding: 15px;
     border-radius: 35px;
     border: 2px solid $advantage-card-border;
+    cursor: pointer;
 
     &_title{
         @include font-600;

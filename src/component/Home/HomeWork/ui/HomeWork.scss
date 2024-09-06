@@ -31,6 +31,7 @@
         justify-content: center;
         gap: 30px;
         margin: 50px 0;
+        cursor: pointer;
 
         &_card_1 {
             @include flex-style;
