@@ -1,14 +1,16 @@
 'use client'
 
 import Link from 'next/link'
-import { NavbarCategories } from './api/api'
 import './ui/navbar.scss'
 import { useState } from 'react'
 import { LanguageData } from '@/data/languageData'
+import NavbarApi from './api/api'
 
 export default function Navbar() {
 
-    const [isOpenPage, setIsOpenPage] = useState()
+
+    const { NavbarCategories } = NavbarApi()
+
     const [selectedLanguage, setSelectedLanguage] = useState(LanguageData.find(language => language.select));
 
     const handleSelect = (language) => {

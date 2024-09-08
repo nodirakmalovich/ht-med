@@ -1,16 +1,13 @@
+import TitleComponent from '@/component/TitleComponent/TitleComponent'
 import './ui/HomeWork.scss'
 
 export default function HomeWork() {
     return (
         <div className="HomeWork my-container">
             <div className='HomeWork_wrapper'>
-                <div className="HomeWork_wrapper_title">
-                    <p className="HomeWork_wrapper_title_text">
-                        Схема работы
-                    </p>
-
-                    <div className='HomeWork_wrapper_title_line'></div>
-                </div>
+                <TitleComponent
+                    title={'Рабочий процесс'}
+                />
 
 
                 <div className="HomeWork_wrapper_scheme">

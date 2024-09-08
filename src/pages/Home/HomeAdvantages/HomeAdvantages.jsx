@@ -1,6 +1,7 @@
 import AdvantageCard from '@/component/Cards/AdvantageCard/AdvantageCard'
 import { advantageData } from './api/HomeAdvantagesApi'
 import './ui/HomeAdvantages.scss'
+import TitleComponent from '@/component/TitleComponent/TitleComponent'
 
 export default function HomeAdvantages() {
 
@@ -10,25 +11,22 @@ export default function HomeAdvantages() {
         <div className="HomeAdvantages">
             <div className="my-container">
                 <div className="HomeAdvantages_wrapper">
-                    <div className="HomeAdvantages_wrapper_title">
-                        <p className="HomeAdvantages_wrapper_title_text">
-                            Преимущества работы с нами
-                        </p>
-
-                        <div className='HomeAdvantages_wrapper_title_line'></div>
-                    </div>
+                    <TitleComponent
+                        title={'Преимущества работы с нами'}
+                    />
 
                     <div className="HomeAdvantages_wrapper_categories">
                         {
                             advantageData.map((category, index) => {
                                 return (
-                                    <AdvantageCard
-                                        key={index}
-                                        image={category.image}
-                                        name={category.name}
-                                        description={category.description}
+                                    <div key={index}>
+                                        <AdvantageCard
+                                            image={category.image}
+                                            name={category.name}
+                                            description={category.description}
 
-                                    />
+                                        />
+                                    </div>
                                 )
                             })
                         }

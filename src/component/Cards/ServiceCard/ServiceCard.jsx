@@ -1,8 +1,8 @@
 import './ui/ServiceCard.scss'
 
-export default function ServiceCard({ bg_image, description, title, key }) {
+export default function ServiceCard({ bg_image, description, title }) {
     return (
-        <div key={key} className="ServiceCard">
+        <div className="ServiceCard">
             <div className="ServiceCard_blur"></div>
             <img className='ServiceCard_image' src={bg_image} alt={title} />
             <div className='ServiceCard_body'>

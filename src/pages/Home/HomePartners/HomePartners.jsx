@@ -22,11 +22,14 @@ export default function HomePartners() {
                     {
                         partnersList?.map((item, index) => {
                             return (
-                                <PartnersCard
-                                    image={item.image}
-                                    name={item.id}
-                                    key={index}
-                                />
+                                <div key={index}>
+                                    
+                                    <PartnersCard
+                                        image={item.image}
+                                        name={item.id}
+    
+                                    />
+                                </div>
                             )
                         })
                     }

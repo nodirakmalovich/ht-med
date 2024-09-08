@@ -7,7 +7,7 @@
     &_form {
         @include flex-style;
         position: relative;
-        z-index: -5;
+        z-index: 1;
         height: 52px;
 
         &_input{
