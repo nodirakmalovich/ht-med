@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 const { default: axios } = require("axios");
 
 
-export default function CatalogModalApi() {
+export default function useCatalogModalApi() {
 
     const [categories, setCategories] = useState()
 

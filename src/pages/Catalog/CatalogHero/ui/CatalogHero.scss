@@ -18,3 +18,19 @@
         }
     }
 }
+
+.accardion {
+
+    &_menu {
+        
+
+        &_item{
+            width: 100%;
+            display: inline-block;
+
+            &_link{
+                width: 100%;
+            }
+        }
+    }
+}

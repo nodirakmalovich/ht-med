@@ -6,53 +6,28 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Button from '@mui/material/Button';
+import Link from 'next/link';
 
-export default function Accardion() {
+export default function Accardion({ title, menuLink, key }) {
     return (
-        <div>
             <Accordion>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel1-content"
                     id="panel1-header"
                 >
-                    Accordion 1
+                    {title}
                 </AccordionSummary>
                 <AccordionDetails>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                    malesuada lacus ex, sit amet blandit leo lobortis eget.
+                    <ul className="accardion_menu">
+                        <li className='accardion_menu_item'>
+                            <Link className='accardion_menu_item_link' href={'#'}>
+                                {menuLink}
+                            </Link>
+                        </li>
+                    </ul>
                 </AccordionDetails>
             </Accordion>
-            <Accordion>
-                <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel2-content"
-                    id="panel2-header"
-                >
-                    Accordion 2
-                </AccordionSummary>
-                <AccordionDetails>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                    malesuada lacus ex, sit amet blandit leo lobortis eget.
-                </AccordionDetails>
-            </Accordion>
-            <Accordion defaultExpanded>
-                <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel3-content"
-                    id="panel3-header"
-                >
-                    Accordion Actions
-                </AccordionSummary>
-                <AccordionDetails>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                    malesuada lacus ex, sit amet blandit leo lobortis eget.
-                </AccordionDetails>
-                <AccordionActions>
-                    <Button>Cancel</Button>
-                    <Button>Agree</Button>
-                </AccordionActions>
-            </Accordion>
-        </div>
+
     );
 }
