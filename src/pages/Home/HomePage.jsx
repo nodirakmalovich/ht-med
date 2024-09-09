@@ -11,7 +11,6 @@ import HomeContact from "./HomeContact/HomeContact";
 export default function HomePage() {
     return (
         <div>
-            <HomeHero />
             <HomeCarousel />
             <HomeCategories />
             <HomeAdvantages />
