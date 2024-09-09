@@ -8,8 +8,6 @@ export default function HomeCategories() {
 
     const { HomeCategories } = HomeCategoriesApi()
 
-    console.log(HomeCategories);
-
     return (
         <div className="home_categories">
             <div className="my-container">

@@ -26,13 +26,20 @@ export default function Navbar() {
                     <div className="navbar_wrapper">
 
                         <div className='navbar_wrapper_left'>
-                            <img className='navbar_wrapper_left_logo' src="/Navbar/Logo.svg" alt="Logo ht-med" />
+                            <Link href={'/'}>
+                                <img className='navbar_wrapper_left_logo' src="/Navbar/Logo.svg" alt="Logo ht-med" />
+                            </Link>
 
-                            <p className='navbar_wrapper_left_title'>
-                                Hi-tech <br />
-                                Orient <br />
-                                Medical
-                            </p>
+                            <Link href={'/'} className='cursor-pointer'>
+
+                                <p className='navbar_wrapper_left_title'>
+                                    Hi-tech <br />
+                                    Orient <br />
+                                    Medical
+                                </p>
+                            </Link>
+
+
                         </div>
 
                         <div className="navbar_wrapper_right">

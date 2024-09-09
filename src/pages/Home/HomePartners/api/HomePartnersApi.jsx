@@ -11,7 +11,6 @@ export default function HomePartnersApi() {
         axios.get('https://admin.ht-med.uz/api/v1/partner-image-list/')
             .then(res => {
                 setPartnersList(res.data.results)
-                console.log(res);
             })
             .catch(error => {
                 console.error("Error fetching data:", error);

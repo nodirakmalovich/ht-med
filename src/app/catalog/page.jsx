@@ -1,7 +1,14 @@
-export default function catalog(){
+import Footer from "@/component/Footer/Footer";
+import Navbar from "@/component/Navbar/Navbar";
+import CatalogPage from "@/pages/Catalog/CatalogPage";
+
+export default function catalog() {
     return (
-        <div className="catalog">
-           <p> catalog</p>
-        </div>
+        <>
+            <Navbar />
+            <CatalogPage />
+            <Footer />
+        </>
+
     )
 }

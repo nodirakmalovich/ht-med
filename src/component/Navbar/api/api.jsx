@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl"
 
 export default function NavbarApi() {
 
-    const { t } = useTranslations("Index")
+    // const { t } = useTranslations("Index")
 
 
 
