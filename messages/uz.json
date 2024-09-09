@@ -1,5 +1,8 @@
 {
     "Index": {
-        "main": "Asosiy"
+        "main": "Главная"
+    },
+    "Catalog": {
+        "catalog": "Katalog"
     }
 }

@@ -1,5 +1,8 @@
 {
     "Index": {
         "main": "Main"
+    },
+    "Catalog": {
+        "catalog": "Catalog"
     }
 }

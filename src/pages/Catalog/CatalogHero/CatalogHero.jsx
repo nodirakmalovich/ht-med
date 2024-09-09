@@ -1,8 +1,11 @@
-// 'use client'
-import CatalogHeroApi from './api/CatalogHeroApi'
+'use client'
+
+import { CatalogHeroApi } from './api/CatalogHeroApi'
 import './ui/CatalogHero.scss'
 
 export default function CatalogHero() {
+
+    const { catalogCategories } = CatalogHeroApi()
 
 
     return (
@@ -14,6 +17,13 @@ export default function CatalogHero() {
                     </p>
                 </div>
 
+                {
+                    catalogCategories?.map((category, index) => {
+                        return (
+                            <p key={index}>{category?.name}</p>
+                        )
+                    })
+                }
 
             </div>
         </div>

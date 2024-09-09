@@ -8,6 +8,7 @@ import Fade from '@mui/material/Fade';
 import Button from '@mui/material/Button';
 import './ui/catalogModal.scss'
 import CatalogCard from "../Cards/CatalogCard/CatalogCard";
+import { useTranslations } from "next-intl";
 
 const style = {
     position: 'absolute',
@@ -17,13 +18,13 @@ const style = {
     width: '80%',
     bgcolor: 'background.paper',
     border: '2px solid #000',
-    borderRadius: '8px', 
+    borderRadius: '8px',
     borderColor: 'white',
     boxShadow: 24,
     p: 4,
-    display: 'grid', 
-    gridTemplateColumns: 'repeat(4, 1fr)', 
-    gap: '16px', 
+    display: 'grid',
+    gridTemplateColumns: 'repeat(4, 1fr)',
+    gap: '16px',
 };
 
 
@@ -31,6 +32,7 @@ export default function CatalogModal() {
 
 
     const { categories } = CatalogModalApi()
+
 
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
@@ -44,7 +46,9 @@ export default function CatalogModal() {
                     className="catalog_button"
                 >
                     <img src="/catalog-menu.svg" alt="menu icon" />
-                    <p>Каталог</p>
+                    <p>
+                        Каталог
+                    </p>
                 </Button>
                 <Modal
                     aria-labelledby="transition-modal-title"
